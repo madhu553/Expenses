@@ -37,7 +37,7 @@ public class ExpensesController {
 
 }
 	@GetMapping("/summary/{month}")
-	public MonthlySummarydto getsummary(@PathVariable int month) {
+	public MonthlySummarydto getsummary(@PathVariable("month") int month) {
 		return expenseService.getMonthlySummary(month);
 		
 	}
